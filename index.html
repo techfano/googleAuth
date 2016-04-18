@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="465308083559-r68rna05j754378r9nuu9i4c7k4odd3l.apps.googleusercontent.com">
+	<script type="text/javascript" charset="utf-8">
+		function onSignIn(googleUser) {
+		  var profile = googleUser.getBasicProfile();
+		  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		  console.log('Name: ' + profile.getName());
+		  console.log('Image URL: ' + profile.getImageUrl());
+		  console.log('Email: ' + profile.getEmail());
+		}
+	</script>
+</head>
+<body>
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+</body>
+</html>
